@@ -1,0 +1,48 @@
+---
+import Layout from "@layouts/main.astro"
+import Typer from "@components/typer.astro"
+import Links from "@components/links.astro"
+---
+<Layout>
+	<div class="main">
+		<div class="main-con">
+			<img src="/favicon.png" alt="Armo Lab Favicon.">
+			<h1>
+				The <span>Armo Laboratory</span>
+			</h1>
+			<Typer />
+			<Links />
+		</div>
+	</div>
+</Layout>
+
+<style lang="scss">
+	div.main {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		.main-con {
+			width: 85%;
+			max-width: 1000px;
+			img {
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+            	border-color: #444444;
+            	border-style: solid;
+            	border-width: 2px;
+			}
+			h1 {
+            	font-size: xxx-large;
+            	font-weight: bold;
+				margin: 10px 0;
+          		span {
+		            background-clip: text;
+            		color: transparent;
+            		background-image: linear-gradient(45deg, #4d688f, #dea7cf);
+          		}
+         	}
+		}
+	}
+</style>
