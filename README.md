@@ -1,4 +1,4 @@
-# Coriander
+# Armo Lab Front-end
 
-## Yet another Random Gradients Picker
+## A home page for armo lab
 

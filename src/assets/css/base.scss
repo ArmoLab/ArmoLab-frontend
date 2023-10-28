@@ -6,7 +6,7 @@
 html {
     font-family: "Outfit", sans-serif, system-ui;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     overflow: auto;
     box-sizing: border-box;
 }
@@ -14,9 +14,10 @@ html {
 body {
     @extend html;
     
-    display: block; padding: 75px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all .45s ease;
-    padding-top: 100px;
 
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     color: #f8f8ff;
