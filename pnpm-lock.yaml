@@ -18,8 +18,8 @@ dependencies:
     specifier: ^2.0.15
     version: 2.0.15
   astro-icon:
-    specifier: ^0.8.1
-    version: 0.8.1
+    specifier: ^1.0.1
+    version: 1.0.1
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -984,12 +984,14 @@ packages:
       terser: 5.19.3
     dev: false
 
-  /astro-icon@0.8.1:
-    resolution: {integrity: sha512-APk+fbFnoyGdIVSPFrdrOW9YBK96/1fYuVe7ULTGW92+z00RKB8GfLJiUvzNVXUAX2rZJCFmruGVF4rrhcTYsg==}
+  /astro-icon@1.0.1:
+    resolution: {integrity: sha512-NtPyGeoSe/TJsGsea6T+8SDcW/wwZ7OIUq731DT7M6nw2B1p5BHuChiQI0bQvIIL79r48nMN7mQ8GBtwsDEucA==, tarball: https://registry.npmjs.org/astro-icon/-/astro-icon-1.0.1.tgz}
     dependencies:
-      node-fetch: 3.3.2
-      resolve-pkg: 2.0.0
-      svgo: 2.8.0
+      '@iconify/tools': 3.0.7
+      '@iconify/types': 2.0.0
+      '@iconify/utils': 2.1.14
+    transitivePeerDependencies:
+      - supports-color
     dev: false
 
   /astro@3.3.2(sass@1.69.4):

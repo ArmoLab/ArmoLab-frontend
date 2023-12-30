@@ -16,8 +16,9 @@
     "@astrojs/sitemap": "^3.0.2",
     "@iconify-json/bxl": "^1.1.7",
     "astro": "^3.3.2",
+    "@iconify-json/simple-icons": "^1.1.86",
     "astro-compress": "^2.0.15",
-    "astro-icon": "^0.8.1",
+    "astro-icon": "^1.0.1",
     "autoprefixer": "^10.4.16",
     "sass": "^1.69.4"
   }
