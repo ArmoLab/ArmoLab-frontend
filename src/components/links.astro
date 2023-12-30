@@ -13,39 +13,13 @@ const LinkArray = [
     }
 ]
 ---
-<div>
+<div class="flex gap-x-2.5 justify-center">
     {LinkArray.map((i) => (
-        <a class="link-item" href={i.link}>
-            <span class="icon">
+        <a class="flex items-center text-xl my-3 py-1.5 px-2 pr-3 rounded-full bg-LinkBG" href={i.link}>
+            <span class="pr-1.5 mr-1.5 ml-0.5 border-solid border-r border-r-gray-100">
                 <Icon name={i.icon} />
             </span>
             <span class="desc">{i.desc}</span>
         </a>
     ))}
 </div>
-
-<style lang="scss">
-    .link-item {
-        display: inline-flex;
-        align-items: center;
-        font-size: large;
-        background-color: #404040;
-        padding: 6px 8px;
-        padding-right: 12px;
-        border-radius: 50px;
-        .icon {
-            border-right-color: #909090;
-            border-right-width: 1px;
-            border-right-style: solid;
-            padding-right: 6px;
-            margin-right: 6px;
-        }
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
-        &::after {
-            content: none;
-            display: none;
-        }
-    }
-</style>
