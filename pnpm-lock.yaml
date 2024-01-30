@@ -11,12 +11,15 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.0.3
     version: 5.1.0(astro@4.0.8)(tailwindcss@3.4.0)
+  '@iconify-json/iconoir':
+    specifier: ^1.1.39
+    version: 1.1.39
   '@iconify-json/simple-icons':
     specifier: ^1.1.86
     version: 1.1.86
   astro:
     specifier: ^4.0.6
-    version: 4.0.8(sass@1.69.6)(typescript@5.3.3)
+    version: 4.0.8(sass@1.70.0)(typescript@5.3.3)
   astro-compress:
     specifier: ^2.0.15
     version: 2.2.5
@@ -27,8 +30,8 @@ dependencies:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.32)
   sass:
-    specifier: ^1.69.4
-    version: 1.69.6
+    specifier: ^1.70.0
+    version: 1.70.0
   tailwindcss:
     specifier: ^3.0.24
     version: 3.4.0
@@ -108,7 +111,7 @@ packages:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.0.8(sass@1.69.6)(typescript@5.3.3)
+      astro: 4.0.8(sass@1.70.0)(typescript@5.3.3)
       autoprefixer: 10.4.16(postcss@8.4.32)
       postcss: 8.4.32
       postcss-load-config: 4.0.2(postcss@8.4.32)
@@ -771,6 +774,12 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@iconify-json/iconoir@1.1.39:
+    resolution: {integrity: sha512-Y9S3neWnszGl6CR2J9wMzUtRLc2/NRZMvSjPJMsVRUUhrUwm87xskyhMEgpOiEBb4uV30Z1CHYxXKUh7Doe1Ww==, tarball: https://registry.npmjs.org/@iconify-json/iconoir/-/iconoir-1.1.39.tgz}
+    dependencies:
+      '@iconify/types': 2.0.0
+    dev: false
 
   /@iconify-json/simple-icons@1.1.86:
     resolution: {integrity: sha512-rD5VlIgiOBPDcVQUCNbGu31WRYt+bj6bWFjH6+KEsxK/hDZTzylT5odF4Jo85PJUGZeJcGn18woE6P6I1Jiuxg==, tarball: https://registry.npmjs.org/@iconify-json/simple-icons/-/simple-icons-1.1.86.tgz}
@@ -1538,7 +1547,7 @@ packages:
       - supports-color
     dev: false
 
-  /astro@4.0.8(sass@1.69.6)(typescript@5.3.3):
+  /astro@4.0.8(sass@1.70.0)(typescript@5.3.3):
     resolution: {integrity: sha512-LwbYUfdrfys5mtI6cA5V8UvPRUVVTRQ68uF1ylrEge6BkPcHHJ7qCYLNdjnNPxZDR9bWi1awILJESB6j+w0P4w==, tarball: https://registry.npmjs.org/astro/-/astro-4.0.8.tgz}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
@@ -1599,7 +1608,7 @@ packages:
       tsconfck: 3.0.0(typescript@5.3.3)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.0.10(sass@1.69.6)
+      vite: 5.0.10(sass@1.70.0)
       vitefu: 0.2.5(vite@5.0.10)
       which-pm: 2.1.1
       yargs-parser: 21.1.1
@@ -2695,8 +2704,8 @@ packages:
     engines: {node: '>= 4'}
     dev: false
 
-  /immutable@4.3.4:
-    resolution: {integrity: sha512-fsXeu4J4i6WNWSikpI88v/PcVflZz+6kMhUfIwc5SY+poQRPnaf5V7qds6SUyUN3cVxEzuCab7QIoLOQ+DQ1wA==, tarball: https://registry.npmjs.org/immutable/-/immutable-4.3.4.tgz}
+  /immutable@4.3.5:
+    resolution: {integrity: sha512-8eabxkth9gZatlwl5TBuJnCsoTADlL6ftEr7A4qgdaTsPyreilDSnUk57SO+jfKcNtxPa22U5KK6DSeAYhpBJw==, tarball: https://registry.npmjs.org/immutable/-/immutable-4.3.5.tgz}
     dev: false
 
   /import-meta-resolve@4.0.0:
@@ -4174,13 +4183,13 @@ packages:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==, tarball: https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz}
     dev: false
 
-  /sass@1.69.6:
-    resolution: {integrity: sha512-qbRr3k9JGHWXCvZU77SD2OTwUlC+gNT+61JOLcmLm+XqH4h/5D+p4IIsxvpkB89S9AwJOyb5+rWNpIucaFxSFQ==, tarball: https://registry.npmjs.org/sass/-/sass-1.69.6.tgz}
+  /sass@1.70.0:
+    resolution: {integrity: sha512-uUxNQ3zAHeAx5nRFskBnrWzDUJrrvpCPD5FNAoRvTi0WwremlheES3tg+56PaVtCs5QDRX5CBLxxKMDJMEa1WQ==, tarball: https://registry.npmjs.org/sass/-/sass-1.70.0.tgz}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
       chokidar: 3.5.3
-      immutable: 4.3.4
+      immutable: 4.3.5
       source-map-js: 1.0.2
     dev: false
 
@@ -4882,7 +4891,7 @@ packages:
       vfile-message: 4.0.2
     dev: false
 
-  /vite@5.0.10(sass@1.69.6):
+  /vite@5.0.10(sass@1.70.0):
     resolution: {integrity: sha512-2P8J7WWgmc355HUMlFrwofacvr98DAjoE52BfdbwQtyLH06XKwaL/FMnmKM2crF0iX4MpmMKoDlNCB1ok7zHCw==, tarball: https://registry.npmjs.org/vite/-/vite-5.0.10.tgz}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -4913,7 +4922,7 @@ packages:
       esbuild: 0.19.11
       postcss: 8.4.32
       rollup: 4.9.2
-      sass: 1.69.6
+      sass: 1.70.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: false
@@ -4926,7 +4935,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 5.0.10(sass@1.69.6)
+      vite: 5.0.10(sass@1.70.0)
     dev: false
 
   /vscode-oniguruma@1.7.0:
