@@ -15,11 +15,11 @@ const LinkArray = [
 ---
 <div class="flex gap-x-2.5 justify-center">
     {LinkArray.map((i) => (
-        <a class="flex items-center text-xl my-3 py-1.5 px-2 pr-3 rounded-full bg-LinkBG" href={i.link}>
-            <span class="pr-1.5 mr-1.5 ml-0.5 border-solid border-r border-r-gray-100">
+        <a class="flex items-center text-xl my-3 py-1.5 px-3 pr-3.5 rounded-full bg-fuchsia-950 text-fuchsia-300" href={i.link}>
+            <span class="pr-1.5 mr-1.5 ml-0.5 border-solid border-r border-r-fuchsia-200">
                 <Icon name={i.icon} />
             </span>
-            <span class="desc">{i.desc}</span>
+            <span class="mb-0.5">{i.desc}</span>
         </a>
     ))}
 </div>
