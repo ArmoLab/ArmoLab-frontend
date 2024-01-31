@@ -5,8 +5,7 @@ module.exports = {
 		extend: {
 			colors: {
 				"BG": "#1f1f1f",
-				"Text": "#f8f8ff",
-				"LinkBG": "#404040"
+				"Text": "#f8f8ff"
 			},
 		},
 	},
